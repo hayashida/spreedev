@@ -23,6 +23,10 @@ services:
       - '3000:3000'
     volumes:
       - ./commerce:/spree/commerce
+      - ./spree:/spree/spree
+      - ./spree_auth_devise:/spree/spree_auth_devise
+      - ./spree_gateway:/spree/spree_gateway
+      - ./spree_i18n:/spree/spree_i18n
     depends_on:
       - db
 

@@ -1,0 +1,12 @@
+[submodule "spree"]
+	path = spree
+	url = https://github.com/spree/spree
+[submodule "spree_auth_devise"]
+	path = spree_auth_devise
+	url = https://github.com/spree/spree_auth_devise
+[submodule "spree_gateway"]
+	path = spree_gateway
+	url = https://github.com/spree/spree_gateway
+[submodule "spree_i18n"]
+	path = spree_i18n
+	url = https://github.com/spree-contrib/spree_i18n
