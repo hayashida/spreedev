@@ -49,3 +49,14 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'spree', path: '../spree'
+gem 'spree_auth_devise', path: '../spree_auth_devise'
+gem 'spree_gateway', path: '../spree_gateway'
+gem 'spree_i18n', path: '../spree_i18n'
+
+group :test, :development do
+	gem 'bullet'
+	gem 'pry-byebug'
+	gem 'rack-mini-profiler'
+end
