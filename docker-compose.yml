@@ -16,13 +16,13 @@ services:
     tty: true
     stdin_open: true
     container_name: 'spreedev_commerce_app'
-    command: bash -c "bundle exec rails s -p 3000 -b '0.0.0.0'"
+    command: bash -c "rm -rf ./tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
     environment:
       RAILS_ENV: development
     ports:
       - '3000:3000'
     volumes:
-      - ./commerce:/spree/commerce
+      - commerce-sync:/spree/commerce/
       - ./spree:/spree/spree
       - ./spree_auth_devise:/spree/spree_auth_devise
       - ./spree_gateway:/spree/spree_gateway
@@ -33,3 +33,5 @@ services:
 volumes:
   mysql:
     driver: local
+  commerce-sync:
+    external: true
