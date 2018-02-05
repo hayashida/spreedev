@@ -54,6 +54,7 @@ gem 'spree', path: '../spree'
 gem 'spree_auth_devise', path: '../spree_auth_devise'
 gem 'spree_gateway', path: '../spree_gateway'
 gem 'spree_i18n', path: '../spree_i18n'
+gem 'spree_print_invoice', path: '../spree_print_invoice'
 
 group :test, :development do
 	gem 'bullet'

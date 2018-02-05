@@ -27,6 +27,7 @@ services:
       - ./spree_auth_devise:/spree/spree_auth_devise
       - ./spree_gateway:/spree/spree_gateway
       - ./spree_i18n:/spree/spree_i18n
+      - ./spree_print_invoice:/spree/spree_print_invoice
     depends_on:
       - db
 

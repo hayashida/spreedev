@@ -10,3 +10,6 @@
 [submodule "spree_i18n"]
 	path = spree_i18n
 	url = https://github.com/spree-contrib/spree_i18n
+[submodule "spree_print_invoice"]
+	path = spree_print_invoice
+	url = https://github.com/spree-contrib/spree_print_invoice.git
